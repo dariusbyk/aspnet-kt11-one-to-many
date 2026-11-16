@@ -1,17 +1,13 @@
-# \# aspnet-kt11-one-to-many
+# aspnet-kt11-one-to-many
 
-# 
+# Описание
 
-# \## Описание
+![Описание](screenshots/0.png)
 
-# !\[Описание](screenshots/0.png)
+# Результат
 
-# 
+![Результат 1](screenshots/1.png)
 
-# \## Результат
+![Результат 2](screenshots/2.png)
 
-# !\[Результат 1](screenshots/1.png)
-
-# !\[Результат 2](screenshots/2.png)
-
-# !\[Результат 2](screenshots/3.png)
+![Результат 2](screenshots/3.png)
