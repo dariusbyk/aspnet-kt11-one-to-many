@@ -1,0 +1,11 @@
+@model Author
+<h1>@Model.Name</h1>
+<p>ID автора: @Model.AuthorId</p>
+<h2>Книги автора</h2>
+<ul>
+@foreach (Book book in Model.Books)
+{
+    <li><a asp-controller="Books" asp-action="Details" asp-route-id="@book.BookId">@book.Title</a></li>
+}
+</ul>
+<a asp-action="Edit" asp-route-id="@Model.AuthorId">Редактировать автора</a>

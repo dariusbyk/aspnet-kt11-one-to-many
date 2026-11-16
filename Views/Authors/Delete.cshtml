@@ -1,0 +1,8 @@
+@model Author
+<h1>Удаление</h1>
+<p>Удалить автора «@Model.Name»?</p>
+<p>Также будут удалены все книги автора: @Model.Books.Count.</p>
+<form asp-action="DeleteConfirmed" asp-route-id="@Model.AuthorId" method="post">
+    <button type="submit">Удалить</button>
+    <a asp-action="Index">Отмена</a>
+</form>

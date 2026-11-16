@@ -1,0 +1,7 @@
+@model Book
+<h1>Удаление</h1>
+<p>Удалить книгу «@Model.Title»?</p>
+<form asp-action="DeleteConfirmed" asp-route-id="@Model.BookId" method="post">
+    <button type="submit">Удалить</button>
+    <a asp-action="Index">Отмена</a>
+</form>

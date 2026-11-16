@@ -1,0 +1,17 @@
+@model List<Author>
+<h1>Авторы</h1>
+<p><a asp-action="Create">Добавить автора</a></p>
+<table>
+    <tr><th>Имя</th><th>Количество книг</th><th>Действия</th></tr>
+    @foreach (Author author in Model)
+    {
+        <tr>
+            <td>@author.Name</td><td>@author.Books.Count</td>
+            <td>
+                <a asp-action="Details" asp-route-id="@author.AuthorId">Просмотр</a>
+                <a asp-action="Edit" asp-route-id="@author.AuthorId">Редактировать</a>
+                <a asp-action="Delete" asp-route-id="@author.AuthorId">Удалить</a>
+            </td>
+        </tr>
+    }
+</table>

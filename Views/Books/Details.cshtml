@@ -1,0 +1,5 @@
+@model Book
+<h1>@Model.Title</h1>
+<p>ID книги: @Model.BookId</p>
+<p>Автор: <a asp-controller="Authors" asp-action="Details" asp-route-id="@Model.AuthorId">@Model.Author.Name</a></p>
+<a asp-action="Edit" asp-route-id="@Model.BookId">Редактировать книгу</a>
